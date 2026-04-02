@@ -36,9 +36,9 @@ const projectRoot = path.join(scriptDir, '..');
 
 // FTP конфиг
 const FTP_CONFIG = {
-  host: 'serv81.hostland.ru',
+  host: 'ftp81.hostland.ru',
   user: 'host1731061',
-  password: 'Levdin051383',
+  password: 'Levdin',
   secure: false,
   port: 21
 };
