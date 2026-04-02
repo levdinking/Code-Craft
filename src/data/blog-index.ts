@@ -116,6 +116,32 @@ export const blogIndex: Record<string, BlogEntry> = {
         excerpt: 'Deep dive into TypeScript 5.7 features: from path rewriting to V8 Compile Caching. How to write type...'
       }
     }
+  },
+
+  // ✅ AUTO-ADDED: tailwind-css-2026-architecture
+  'tailwind-css-2026-architecture': {
+    id: 'tailwind-css-2026-architecture',
+    category: 'frontend',
+    tags: ['tailwind', 'css', 'архитектура', 'оптимизация', 'best-practices', '2026'],
+    date: '2026-01-15',
+    image: '/blog-images/og-tailwind-css-2026.jpg',
+    translations: {
+      ru: {
+        slug: 'tailwind-css-2026-arhitektura-stiley',
+        title: 'Tailwind CSS 2026: архитектура стилей для больших проектов',
+        excerpt: 'Полное руководство по организации, масштабированию и оптимизации Tailwind CSS в корпоративных проектах 2026 года.'
+      },
+      de: {
+        slug: 'tailwind-css-2026-stilarchitektur',
+        title: 'Tailwind CSS 2026: Stilarchitektur für große Projekte',
+        excerpt: 'Umfassender Leitfaden zur Organisation, Skalierung und Optimierung von Tailwind CSS in Unternehmensprojekten des Jahres 2026.'
+      },
+      en: {
+        slug: 'tailwind-css-2026-style-architecture',
+        title: 'Tailwind CSS 2026: Style Architecture for Large Projects',
+        excerpt: 'Complete guide to organizing, scaling, and optimizing Tailwind CSS in enterprise projects of 2026.'
+      }
+    }
   }
 };
 
