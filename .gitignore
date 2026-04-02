@@ -1,0 +1,1 @@
+Nothing needs to be added to .gitignore since the only change is adding a source file (`scripts/deploy-only.cjs`) which should not be ignored.
