@@ -1,0 +1,406 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Pavel Levdin",
+    "title": "Full-Stack Developer",
+    "subtitle": "I create modern websites, web applications and automation solutions",
+    "cta": "Get in Touch",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a professional developer with extensive experience in creating modern web solutions. My goal is to help businesses through high-quality digital products where beautiful design, user-friendly functionality, and high performance come together.",
+    "experience": "Years",
+    "experienceShort": "Experience",
+    "projects": "Completed Projects",
+    "clients": "Satisfied Clients",
+    "heading": "Building Digital",
+    "highlight": "Excellence",
+    "photoAlt": "Pavel Levdin",
+    "features": {
+      "goal": {
+        "title": "Goal-Oriented",
+        "description": "Focused on achieving business objectives through technology"
+      },
+      "innovative": {
+        "title": "Innovative",
+        "description": "Always exploring new technologies and approaches"
+      },
+      "results": {
+        "title": "Results-Driven",
+        "description": "Delivering projects that exceed expectations"
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I Can Do For You",
+    "description": "Comprehensive web development solutions tailored to your business needs",
+    "discuss": "Discuss Project",
+    "webdev": {
+      "title": "Website Development",
+      "description": "Modern, responsive websites with clean code and excellent performance",
+      "features": {
+        "responsive": "Responsive design",
+        "clean": "Clean code",
+        "seo": "SEO-friendly",
+        "fast": "Fast loading"
+      }
+    },
+    "webapp": {
+      "title": "Web Applications",
+      "description": "Complex web applications with rich functionality and intuitive interface",
+      "features": {
+        "functionality": "Rich functionality",
+        "ui": "Intuitive UI",
+        "scalable": "Scalable architecture",
+        "api": "API integration"
+      }
+    },
+    "seo": {
+      "title": "SEO and Optimization",
+      "description": "Website optimization for search engines and maximum performance",
+      "features": {
+        "technical": "Technical SEO",
+        "performance": "Performance Optimization",
+        "vitals": "Core Web Vitals",
+        "analytics": "Analytics Setup"
+      }
+    },
+    "automation": {
+      "title": "Process Automation",
+      "description": "Automation of business processes to increase efficiency",
+      "features": {
+        "workflow": "Workflow automation",
+        "data": "Data processing",
+        "integration": "Integration solutions",
+        "scripts": "Custom scripts"
+      }
+    },
+    "mvp": {
+      "title": "MVP & Startups",
+      "description": "Rapid development of minimum viable products for startups",
+      "features": {
+        "prototyping": "Rapid prototyping",
+        "lean": "Lean development",
+        "validation": "Market validation",
+        "scalable": "Scalable MVP"
+      }
+    },
+    "support": {
+      "title": "Support & Maintenance",
+      "description": "Ongoing support and updates for your projects",
+      "features": {
+        "updates": "Regular updates",
+        "bugs": "Bug fixes",
+        "monitoring": "Performance monitoring",
+        "security": "Security patches"
+      }
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "My development process ensures quality and transparency",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your requirements"
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "Creating detailed roadmap"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Building with best practices"
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Launch and support"
+        }
+      }
+    },
+    "bottomCta": "Have a project in mind? Let's discuss how I can help.",
+    "getInTouch": "Get in Touch"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "My Recent Projects",
+    "description": "A selection of my recent work across various industries and technologies",
+    "viewAll": "View All Projects",
+    "viewProject": "Open Project",
+    "categories": {
+      "all": "All",
+      "websites": "Websites",
+      "apps": "Applications",
+      "landing": "Landing Pages"
+    },
+    "projects": {
+      "fithilf": {
+        "title": "FitHilf",
+        "description": "Fitness and health platform with personal training programs"
+      },
+      "peristeen": {
+        "title": "Peristeen Plus",
+        "description": "Medical products website for Coloplast"
+      },
+      "delimes": {
+        "title": "Delimes",
+        "description": "Corporate website for digital agency"
+      },
+      "mpinnovativ": {
+        "title": "MP Innovativ Bau",
+        "description": "Website for construction company in Germany"
+      },
+      "manipulator": {
+        "title": "Anapa Manipulator",
+        "description": "Service website for crane rental"
+      },
+      "domusman": {
+        "title": "Domusman",
+        "description": "Real estate and management platform"
+      },
+      "socialhub": {
+        "title": "Social Hub",
+        "description": "Social media management platform"
+      }
+    }
+  },
+  "advantages": {
+    "title": "Why Choose Me",
+    "trusted": "Trusted by over 30 clients worldwide",
+    "speed": {
+      "title": "Fast Development",
+      "description": "Optimal timelines without compromising quality"
+    },
+    "quality": {
+      "title": "High Quality",
+      "description": "Clean code following best practices and standards"
+    },
+    "individual": {
+      "title": "Individual Approach",
+      "description": "Every project is unique and tailored to your needs"
+    },
+    "tech": {
+      "title": "Modern Technologies",
+      "description": "Using current tools and frameworks"
+    }
+  },
+  "cta": {
+    "title": "Ready to start your project?",
+    "subtitle": "Let's discuss how I can help bring your ideas to life",
+    "button": "Discuss Project",
+    "responseTime": "Usually respond within 24 hours",
+    "availability": "Available for new projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "description": "Have a project in mind? Let's discuss how I can help.",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "contactMethod": "Preferred Contact Method",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "email": "Email",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "successMessage": "I will get back to you as soon as possible.",
+      "error": "Something went wrong. Please try again.",
+      "telegramUsername": "Telegram Username",
+      "whatsappNumber": "WhatsApp Number",
+      "emailAddress": "Email Address"
+    },
+    "info": {
+      "title": "Contact Information",
+      "availability": "Available for new projects",
+      "response": "Response within 24 hours",
+      "workingHours": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysTime": "9:00 - 18:00 CET",
+      "weekend": "Saturday - Sunday",
+      "weekendTime": "By appointment"
+    }
+  },  
+  "imprint": {
+    "seo": {
+      "title": "Imprint | Pavel Levdin",
+      "description": "Contact and legal information according to German law."
+    },
+    "title": "Imprint",
+    "legalNotice": "Information according to § 5 TMG",
+    "owner": "Owner",
+    "ownerName": "Pavel Levdin",
+    "address": "Address",
+    "addressLine1": "Am Dobben 102A",
+    "addressLine2": "28211 Bremen",
+    "country": "Germany",
+    "contact": "Contact",
+    "email": "Email",
+    "emailValue": "levdin.pavel@yandex.ru",
+    "phone": "Phone",
+    "phoneValue": "+49 176 43141306",
+    "vatId": "VAT ID",
+    "vatValue": "DE [your VAT number or 'not applicable']",
+    "responsible": "Responsible for content",
+    "responsiblePerson": "Pavel Levdin",
+    "liabilityTitle": "Liability Notice",
+    "liabilityText": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content. Our pages' content was created with great care. However, we cannot guarantee accuracy, completeness, and timeliness of content.",
+    "copyrightTitle": "Copyright",
+    "copyrightText": "Content and materials on these pages are protected by German copyright law. Reproduction, processing, distribution, and any use outside copyright limits require written consent of the author.",
+    "disputeTitle": "Dispute Resolution",
+    "disputeText": "The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr. We are not obligated or willing to participate in dispute resolution procedures through consumer arbitration bodies.",
+    "lastUpdated": "Last updated"
+  },
+  "privacy": {
+    "seo": {
+      "title": "Privacy Policy | Pavel Levdin",
+      "description": "Information about data protection and processing of personal data."
+    },
+    "title": "Privacy Policy",
+    "section1": {
+      "title": "Data Controller",
+      "text": "The data controller is Pavel Levdin, Am Dobben 102A, 28211 Bremen, Germany. If you have any questions about data protection, please contact us at any time."
+    },
+    "section2": {
+      "title": "Data Collection",
+      "text": "We only collect data necessary to provide our services. This includes technical data (IP address, browser type) and voluntary contact inquiries through our contact form."
+    },
+    "section3": {
+      "title": "Data Usage",
+      "text": "Collected data is used exclusively to contact you regarding your inquiry and to improve website functionality. We do not share data with third parties without your consent."
+    },
+    "section4": {
+      "title": "Data Security",
+      "text": "We implement technical and organizational measures to protect your data from loss, manipulation, and unauthorized access. All data transfers are encrypted (HTTPS)."
+    },
+    "section5": {
+      "title": "Cookies & Tracking",
+      "text": "Our website only uses essential cookies for forms and navigation. Third-party tracking services (Google Analytics, Facebook Pixel, etc.) are not used. You can disable cookies in your browser settings."
+    },
+    "section6": {
+      "title": "Your Rights",
+      "text": "You have the right to request information about your data, demand correction or deletion. Contact us via email for this."
+    },
+    "section7": {
+      "title": "Changes to Privacy Policy",
+      "text": "We may update this privacy policy from time to time. The current version is always available on this page."
+    },
+    "contact": "Contact for privacy matters",
+    "lastUpdated": "Last updated"
+  },
+  "cookie": {
+    "title": "Cookies & Privacy",
+    "description": "We only use technically necessary cookies for website functionality. No tracking or marketing cookies.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "loading": "Baking cookies...",
+    "privacyLink": "Privacy Policy",
+    "moreInfo": "Learn more in our"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved",
+    "madeWith": "Made with passion"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "title": "Language",
+    "en": "English",
+    "ru": "Русский",
+    "de": "Deutsch"
+  },
+  "latestArticles": {
+    "title": "Latest Articles",
+    "subtitle": "Useful materials about web development, SEO and optimization",
+    "readMore": "Read more",
+    "viewAll": "All articles"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What clients say about working with me"
+  },
+  "blog": {
+    "recentPosts": "Recent Posts",
+    "popularPosts": "Popular",
+    "notFoundDesc": "The requested article does not exist or is not available in this language",
+    "popularTags": "Popular Tags",
+    "copied": "Copied!",
+    "featuredBadge": "Featured",
+    "categoryNotFound": "Category not found",
+    "categoryDescription": "Articles in category {{name}}",
+    "authorBio": "Full-Stack developer with 10+ years of experience. Specializing in React, Next.js and modern web development.",
+    "tagCloud": "Tag Cloud",
+    "noArticlesInCategory": "No articles in this category yet",
+    "tagDescription": "Articles tagged with #{{tag}}",
+    "tagLabel": "Tag",
+    "noArticlesWithTag": "No articles found with this tag",
+    "seo": {
+      "title": "Blog | Pavel Levdin",
+      "description": "Articles about web development, SEO, design and modern technologies. Practical guides from an experienced developer."
+    },
+    "telegram": {
+      "title": "Subscribe on Telegram",
+      "description": "Get new articles and updates directly in messenger",
+      "button": "Subscribe"
+    },
+    "title": "Blog",
+    "subtitle": "Useful articles about web development, SEO and design",
+    "backToList": "Back to blog",
+    "relatedPosts": "Related Posts",
+    "readMore": "Read more",
+    "categories": "Categories",
+    "tags": "Tags",
+    "notFound": "Article not found",
+    "search": "Search articles...",
+    "allArticles": "All Articles",
+    "featured": "Featured",
+    "readingTime": "min read",
+    "views": "views",
+    "share": "Share",
+    "tableOfContents": "Table of Contents",
+    "newsletter": {
+      "title": "Subscribe to Updates",
+      "description": "Get new articles about web development delivered to your inbox",
+      "placeholder": "your@email.com",
+      "button": "Subscribe",
+      "success": "Thanks for subscribing!",
+      "error": {
+        "invalid": "Invalid email format",
+        "exists": "You're already subscribed",
+        "network": "Connection error. Please try again later",
+        "generic": "Something went wrong. Please try again"
+      }
+    },
+    "categoryLabels": {
+      "webdev": "Web Development",
+      "webdevDesc": "Web development and website creation",
+      "seo": "SEO & Marketing",
+      "seoDesc": "Search engine optimization",
+      "performance": "Performance",
+      "performanceDesc": "Speed optimization"
+    },
+    "tagLabels": {
+      "seo": "SEO",
+      "performance": "Performance"
+    }
+  }
+ 
+}

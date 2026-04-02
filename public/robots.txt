@@ -1,0 +1,50 @@
+# robots.txt for my.delimes.ru
+# Last updated: 2026-03-31
+
+User-agent: *
+Allow: /
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Main sitemap
+Sitemap: https://my.delimes.ru/sitemap.xml
+
+# Additional sitemaps for different content types (if applicable)
+# Sitemap: https://my.delimes.ru/sitemap-images.xml
+# Sitemap: https://my.delimes.ru/sitemap-videos.xml
+
+# Disallow patterns (if needed in future)
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /private/
+# Disallow: /*?*sort=  # Filter parameters
+# Disallow: /*?*page=  # Pagination parameters
+
+# Allow specific file types for indexing
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+
+# Block specific bots (optional, uncomment if needed)
+# User-agent: AhrefsBot
+# Crawl-delay: 10
+
+# User-agent: SemrushBot
+# Crawl-delay: 10
+
+# User-agent: MJ12bot
+# Disallow: /
+
+# Host directive (for Yandex and others)
+Host: https://my.delimes.ru
+
+# Clean-param for Yandex (if using URL parameters)
+# Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
+
+# Sitemap index (if you have multiple sitemaps)
+# Sitemap: https://my.delimes.ru/sitemap-index.xml

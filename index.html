@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary Meta Tags -->
+    <title id="meta-title">Pavel Levdin - Full-Stack Entwickler | Portfolio</title>
+    <meta id="meta-description" name="description" content="Professioneller Webentwickler für moderne Websites, Webanwendungen und Automatisierungslösungen." />
+    <meta id="meta-keywords" name="keywords" content="Webentwickler, Full-Stack Entwickler, React Entwickler, Webseiten Entwicklung" />
+    <meta name="author" content="Pavel Levdin" />
+    <meta name="robots" content="index, follow" />
+    <meta id="meta-language" name="language" content="German" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta id="og-url" property="og:url" content="https://my.delimes.ru" />
+    <meta id="og-title" property="og:title" content="Pavel Levdin - Full-Stack Entwickler | Portfolio" />
+    <meta id="og-description" property="og:description" content="Professioneller Webentwickler für moderne Websites, Webanwendungen und Automatisierungslösungen." />
+    <meta id="og-image" property="og:image" content="https://my.delimes.ru/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta id="og-locale" property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Pavel Levdin Portfolio" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta id="twitter-url" name="twitter:url" content="https://my.delimes.ru" />
+    <meta id="twitter-title" name="twitter:title" content="Pavel Levdin - Full-Stack Entwickler | Portfolio" />
+    <meta id="twitter-description" name="twitter:description" content="Professioneller Webentwickler für moderne Websites, Webanwendungen und Automatisierungslösungen." />
+    <meta id="twitter-image" name="twitter:image" content="https://my.delimes.ru/og-image.png" />
+    
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2F8E92" />
+    <meta name="msapplication-TileColor" content="#2F8E92" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Canonical URL -->
+    <link id="canonical" rel="canonical" href="https://my.delimes.ru" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="de" href="https://my.delimes.ru/de" />
+    <link rel="alternate" hreflang="en" href="https://my.delimes.ru/en" />
+    <link rel="alternate" hreflang="ru" href="https://my.delimes.ru/ru" />
+    <link rel="alternate" hreflang="x-default" href="https://my.delimes.ru/de" />
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Language Detection Script -->
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        const lang = path.startsWith('/en') ? 'en' : path.startsWith('/ru') ? 'ru' : 'de';
+        const baseUrl = 'https://my.delimes.ru';
+        
+        const seoData = {
+          de: {
+            lang: 'de',
+            title: 'Pavel Levdin - Full-Stack Entwickler | Portfolio',
+            description: 'Professioneller Webentwickler für moderne Websites, Webanwendungen und Automatisierungslösungen. SEO und Optimierung, technisches SEO, Core Web Vitals.',
+            keywords: 'Webentwickler, Full-Stack Entwickler, React Entwickler, SEO und Optimierung, Technisches SEO, Core Web Vitals, Webanwendungen, Bremen',
+            ogLocale: 'de_DE',
+            language: 'German',
+            image: baseUrl + '/og-image.png'
+          },
+          en: {
+            lang: 'en',
+            title: 'Pavel Levdin - Full-Stack Developer | Portfolio',
+            description: 'Professional web developer specializing in modern websites, web applications, and SEO optimization. Technical SEO, performance optimization, Core Web Vitals.',
+            keywords: 'web developer, full-stack developer, react developer, SEO and optimization, technical SEO, Core Web Vitals, web applications',
+            ogLocale: 'en_US',
+            language: 'English',
+            image: baseUrl + '/og-image.png'
+          },
+          ru: {
+            lang: 'ru',
+            title: 'Павел Левдин - Full-Stack разработчик | Портфолио',
+            description: 'Профессиональный веб-разработчик, специализирующийся на современных сайтах, веб-приложениях и SEO-оптимизации. Техническое SEO, оптимизация производительности, Core Web Vitals.',
+            keywords: 'веб разработчик, фулстек разработчик, react разработчик, SEO и оптимизация, техническое SEO, Core Web Vitals, веб приложения',
+            ogLocale: 'ru_RU',
+            language: 'Russian',
+            image: baseUrl + '/og-image.png'
+          }
+        };
+        
+        const data = seoData[lang];
+        const url = baseUrl + path;
+        
+        document.documentElement.lang = data.lang;
+        document.getElementById('meta-title').textContent = data.title;
+        document.getElementById('meta-description').content = data.description;
+        document.getElementById('meta-keywords').content = data.keywords;
+        document.getElementById('meta-language').content = data.language;
+        
+        document.getElementById('og-title').content = data.title;
+        document.getElementById('og-description').content = data.description;
+        document.getElementById('og-locale').content = data.ogLocale;
+        document.getElementById('og-url').content = url;
+        document.getElementById('og-image').content = data.image;
+        
+        document.getElementById('twitter-title').content = data.title;
+        document.getElementById('twitter-description').content = data.description;
+        document.getElementById('twitter-url').content = url;
+        document.getElementById('twitter-image').content = data.image;
+        
+        document.getElementById('canonical').href = url;
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KRYS7B82W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3KRYS7B82W');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108284704', 'ym');
+
+        ym(108284704, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/108284704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

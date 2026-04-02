@@ -1,0 +1,406 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Pavel Levdin",
+    "title": "Full-Stack Entwickler",
+    "subtitle": "Ich erstelle moderne Websites, Webanwendungen und Automatisierungslösungen",
+    "cta": "Kontakt aufnehmen",
+    "scroll": "Nach unten scrollen"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin ein professioneller Entwickler mit umfangreicher Erfahrung in der Erstellung moderner Web-Lösungen. Mein Ziel ist es, Unternehmen durch hochwertige digitale Produkte zu unterstützen, bei denen schönes Design, benutzerfreundliche Funktionalität und hohe Leistung zusammenkommen.",
+    "experience": "Jahre",
+    "experienceShort": "Erfahrung",
+    "projects": "Abgeschlossene Projekte",
+    "clients": "Zufriedene Kunden",
+    "heading": "Digitale",
+    "highlight": "Exzellenz",
+    "photoAlt": "Pavel Levdin",
+    "features": {
+      "goal": {
+        "title": "Zielorientiert",
+        "description": "Fokussiert auf die Erreichung von Geschäftszielen durch Technologie"
+      },
+      "innovative": {
+        "title": "Innovativ",
+        "description": "Ständige Erkundung neuer Technologien und Ansätze"
+      },
+      "results": {
+        "title": "Ergebnisorientiert",
+        "description": "Projekte, die Erwartungen übertreffen"
+      }
+    }
+  },
+  "services": {
+    "title": "Leistungen",
+    "subtitle": "Was ich für Sie tun kann",
+    "description": "Umfassende Webentwicklungslösungen, maßgeschneidert für Ihre Geschäftsanforderungen",
+    "webdev": {
+      "title": "Webentwicklung",
+      "description": "Moderne, responsive Websites mit sauberem Code und exzellenter Performance",
+      "features": {
+        "responsive": "Responsives Design",
+        "cleanCode": "Sauberer Code",
+        "seoFriendly": "SEO-freundlich",
+        "fastLoading": "Schnelle Ladezeit"
+      }
+    },
+    "webapp": {
+      "title": "Webanwendungen",
+      "description": "Komplexe Webanwendungen mit reichhaltiger Funktionalität und intuitiver Oberfläche",
+      "features": {
+        "richFunctionality": "Reichhaltige Funktionalität",
+        "intuitiveUI": "Intuitive Benutzeroberfläche",
+        "scalable": "Skalierbare Architektur",
+        "apiIntegration": "API-Integration"
+      }
+    },
+    "seo": {
+      "title": "SEO und Optimierung",
+      "description": "Website-Optimierung für Suchmaschinen und maximale Leistung",
+      "features": {
+        "technical": "Technisches SEO",
+        "performance": "Leistungsoptimierung",
+        "vitals": "Core Web Vitals",
+        "analytics": "Analytics-Einrichtung"
+      }
+    },
+    "automation": {
+      "title": "Prozessautomatisierung",
+      "description": "Automatisierung von Geschäftsprozessen zur Effizienzsteigerung",
+      "features": {
+        "workflow": "Workflow-Automatisierung",
+        "dataProcessing": "Datenverarbeitung",
+        "integration": "Integrationslösungen",
+        "scripts": "Benutzerdefinierte Skripte"
+      }
+    },
+    "mvp": {
+      "title": "MVP & Startups",
+      "description": "Schnelle Entwicklung minimal viable Produkte für Startups",
+      "features": {
+        "prototyping": "Schnelles Prototyping",
+        "lean": "Lean-Entwicklung",
+        "validation": "Marktvalidierung",
+        "scalableMvp": "Skalierbares MVP"
+      }
+    },
+    "support": {
+      "title": "Support & Wartung",
+      "description": "Kontinuierliche Unterstützung und Updates für Ihre Projekte",
+      "features": {
+        "updates": "Regelmäßige Updates",
+        "bugFixes": "Fehlerbehebungen",
+        "monitoring": "Performance-Überwachung",
+        "security": "Sicherheitspatches"
+      }
+    },
+    "process": {
+      "title": "Wie wir arbeiten",
+      "subtitle": "Mein Entwicklungsprozess garantiert Qualität und Transparenz",
+      "steps": {
+        "discovery": {
+          "step": "01",
+          "title": "Analyse",
+          "description": "Verständnis Ihrer Anforderungen"
+        },
+        "planning": {
+          "step": "02",
+          "title": "Planung",
+          "description": "Erstellung einer detaillierten Roadmap"
+        },
+        "development": {
+          "step": "03",
+          "title": "Entwicklung",
+          "description": "Entwicklung nach Best Practices"
+        },
+        "delivery": {
+          "step": "04",
+          "title": "Lieferung",
+          "description": "Launch und Support"
+        }
+      }
+    },
+    "bottomCta": "Haben Sie ein Projekt im Sinn? Lassen Sie uns besprechen, wie ich helfen kann.",
+    "getInTouch": "Kontakt aufnehmen",
+    "discussProject": "Projekt besprechen"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Meine neuesten Projekte",
+    "description": "Eine Auswahl meiner neuesten Arbeiten aus verschiedenen Branchen und Technologien",
+    "noProjects": "Keine Projekte in dieser Kategorie gefunden",
+    "viewAll": "Alle Projekte ansehen",
+    "viewProject": "Projekt öffnen",
+    "categories": {
+      "all": "Alle",
+      "websites": "Websites",
+      "apps": "Anwendungen",
+      "landing": "Landing Pages"
+    },
+    "projects": {
+      "fithilf": {
+        "title": "FitHilf",
+        "description": "Fitness- und Gesundheitsplattform mit persönlichen Trainingsprogrammen"
+      },
+      "peristeen": {
+        "title": "Peristeen Plus",
+        "description": "Website für Medizinprodukte von Coloplast"
+      },
+      "delimes": {
+        "title": "Delimes",
+        "description": "Unternehmenswebsite für Digitalagentur"
+      },
+      "mpinnovativ": {
+        "title": "MP Innovativ Bau",
+        "description": "Website für Bauunternehmen in Deutschland"
+      },
+      "manipulator": {
+        "title": "Anapa Manipulator",
+        "description": "Service-Website für Kranvermietung"
+      },
+      "domusman": {
+        "title": "Domusman",
+        "description": "Immobilien- und Verwaltungsplattform"
+      },
+      "socialhub": {
+        "title": "Social Hub",
+        "description": "Social Media Management Plattform"
+      }
+    }
+  },
+  "advantages": {
+    "title": "Warum mich wählen",
+    "speed": {
+      "title": "Schnelle Entwicklung",
+      "description": "Optimale Zeitpläne ohne Qualitätseinbußen"
+    },
+    "quality": {
+      "title": "Hohe Qualität",
+      "description": "Sauberer Code nach besten Praktiken und Standards"
+    },
+    "individual": {
+      "title": "Individueller Ansatz",
+      "description": "Jedes Projekt ist einzigartig und auf Ihre Bedürfnisse zugeschnitten"
+    },
+    "tech": {
+      "title": "Moderne Technologien",
+      "description": "Verwendung aktueller Tools und Frameworks"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihr Projekt zu starten?",
+    "subtitle": "Lassen Sie uns besprechen, wie ich helfen kann, Ihre Ideen zu verwirklichen",
+    "button": "Projekt besprechen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie mich",
+    "description": "Haben Sie eine Projektidee? Lassen Sie uns besprechen, wie ich Ihnen helfen kann, Ihre Vision Wirklichkeit werden zu lassen.",
+    "error": "Fehler beim Senden. Bitte versuchen Sie es später erneut oder kontaktieren Sie mich direkt über Telegram.",
+    "success": {
+      "title": "Nachricht gesendet!",
+      "desc": "Ich werde mich so schnell wie möglich bei Ihnen melden. Normalerweise antworte ich innerhalb von 2 Stunden.",
+      "new": "Weitere senden"
+    },
+    "form": {
+      "name": "Ihr Name",
+      "namePlaceholder": "Max Mustermann",
+      "contactMethod": "Bevorzugte Kontaktart",
+      "telegram": "Telegram",
+      "whatsapp": "WhatsApp",
+      "email": "E-Mail",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "availability": "Verfügbar für Projekte",
+      "response": "Antwort innerhalb von 2 Stunden",
+      "workingHours": "Arbeitszeiten",
+      "weekdays": "Mo - Fr",
+      "weekdaysTime": "9:00 - 18:00 MEZ",
+      "weekend": "Sa - So",
+      "weekendTime": "Nach Vereinbarung"
+    }
+  },  
+  "imprint": {
+    "seo": {
+      "title": "Impressum | Pavel Levdin",
+      "description": "Kontakt- und rechtliche Informationen gemäß § 5 TMG."
+    },
+    "title": "Impressum",
+      "legalNotice": "Angaben gemäß § 5 TMG",
+      "owner": "Inhaber",
+      "ownerName": "Pavel Levdin",
+      "address": "Anschrift",
+      "addressLine1": "Am Dobben 102A",
+      "addressLine2": "28211 Bremen",
+      "country": "Deutschland",
+      "contact": "Kontakt",
+      "email": "E-Mail",
+      "emailValue": "levdin.pavel@yandex.ru",
+      "phone": "Telefon",
+      "phoneValue": "+49 176 43141306",
+      "vatId": "USt-IdNr.",
+      "vatValue": "DE [Ihre USt-IdNr. oder 'nicht vorhanden']",
+      "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+      "responsiblePerson": "Pavel Levdin",
+      "liabilityTitle": "Haftungshinweis",
+      "liabilityText": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.",
+      "copyrightTitle": "Urheberrecht",
+      "copyrightText": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+      "disputeTitle": "Streitschlichtung",
+      "disputeText": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+      "lastUpdated": "Letzte Aktualisierung"
+    },
+  "privacy": {
+    "seo": {
+      "title": "Datenschutzerklärung | Pavel Levdin",
+      "description": "Informationen zum Datenschutz und zur Verarbeitung personenbezogener Daten."
+    },
+    "title": "Datenschutzerklärung",
+    "section1": {
+      "title": "Verantwortlicher",
+      "text": "Verantwortlich für die Datenverarbeitung ist Pavel Levdin, Am Dobben 102A, 28211 Bremen, Deutschland. Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden."
+    },
+    "section2": {
+      "title": "Erhebung von Daten",
+      "text": "Wir erheben nur die Daten, die für die Bereitstellung unserer Dienste erforderlich sind. Dies umfasst technische Daten (IP-Adresse, Browser-Typ) und freiwillige Kontaktanfragen über unser Formular."
+    },
+    "section3": {
+      "title": "Verwendung von Daten",
+      "text": "Die erhobenen Daten werden ausschließlich zur Kontaktaufnahme mit Ihnen aufgrund Ihrer Anfrage und zur Verbesserung der Website genutzt. Wir geben Daten nicht ohne Ihre Zustimmung an Dritte weiter."
+    },
+    "section4": {
+      "title": "Datensicherheit",
+      "text": "Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten vor Verlust, Manipulation und unbefugtem Zugriff zu schützen. Alle Datenübertragungen erfolgen verschlüsselt (HTTPS)."
+    },
+    "section5": {
+      "title": "Cookies & Tracking",
+      "text": "Unsere Website verwendet nur essenzielle Cookies für Formulare und Navigation. Tracking-Dienste Dritter (Google Analytics, Facebook Pixel etc.) werden nicht eingesetzt. Sie können Cookies in Ihren Browser-Einstellungen deaktivieren."
+    },
+    "section6": {
+      "title": "Ihre Rechte",
+      "text": "Sie haben das Recht, Auskunft über Ihre Daten zu verlangen, deren Berichtigung oder Löschung zu fordern. Kontaktieren Sie uns dazu per E-Mail."
+    },
+    "section7": {
+      "title": "Änderungen der Datenschutzerklärung",
+      "text": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Die aktuelle Version ist immer auf dieser Seite verfügbar."
+    },
+    "contact": "Kontakt zum Datenschutz",
+    "lastUpdated": "Letzte Aktualisierung"
+  },
+  "cookie": {
+   "title": "Cookies & Privatsphäre",
+    "description": "Wir verwenden nur technisch notwendige Cookies für die Funktionalität dieser Website. Keine Tracking- oder Marketing-Cookies.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "loading": "Cookies werden gebacken...",
+    "privacyLink": "Datenschutzerklärung",
+    "moreInfo": "Mehr erfahren in unserer"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten",
+    "madeWith": "Mit Leidenschaft gemacht"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "language": {
+    "title": "Sprache",
+    "en": "English",
+    "ru": "Русский",
+    "de": "Deutsch"
+  },
+  "latestArticles": {
+    "title": "Neueste Artikel",
+    "subtitle": "Nützliche Materialien über Webentwicklung, SEO und Optimierung",
+    "readMore": "Weiterlesen",
+    "viewAll": "Alle Artikel"
+  },
+  "testimonials": {
+    "title": "Kundenbewertungen",
+   "subtitle": "Was Kunden über die Zusammenarbeit mit mir sagen"
+  },
+  "blog": {
+    "recentPosts": "Neueste Artikel",
+    "popularPosts": "Beliebt",
+    "notFoundDesc": "Der angeforderte Artikel existiert nicht oder ist in dieser Sprache nicht verfügbar",
+    "popularTags": "Beliebte Tags",
+    "copied": "Kopiert!",
+    "featuredBadge": "Empfohlen",
+    "categoryNotFound": "Kategorie nicht gefunden",
+    "categoryDescription": "Artikel in der Kategorie {{name}}",
+    "authorBio": "Full-Stack Entwickler mit 10+ Jahren Erfahrung. Spezialisiert auf React, Next.js und moderne Webentwicklung.",
+    "tagCloud": "Tag-Cloud",
+    "noArticlesInCategory": "Noch keine Artikel in dieser Kategorie",
+    "tagDescription": "Artikel mit dem Tag #{{tag}}",
+    "tagLabel": "Tag",
+    "noArticlesWithTag": "Keine Artikel mit diesem Tag gefunden",
+    "seo": {
+      "title": "Blog | Pavel Levdin",
+      "description": "Artikel über Webentwicklung, SEO, Design und moderne Technologien. Praktische Anleitungen von einem erfahrenen Entwickler."
+    },
+    "telegram": {
+      "title": "Abonnieren Sie auf Telegram",
+      "description": "Erhalten Sie neue Artikel und Updates direkt im Messenger",
+      "button": "Abonnieren"
+    },
+    "title": "Blog",
+    "subtitle": "Nützliche Artikel über Webentwicklung, SEO und Design",
+    "backToList": "Zurück zum Blog",
+    "relatedPosts": "Ähnliche Artikel",
+    "readMore": "Weiterlesen",
+    "categories": "Kategorien",
+    "tags": "Tags",
+    "notFound": "Artikel nicht gefunden",
+    "search": "Artikel suchen...",
+    "allArticles": "Alle Artikel",
+    "featured": "Empfohlen",
+    "readingTime": "Min. Lesezeit",
+    "views": "Aufrufe",
+    "share": "Teilen",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "newsletter": {
+      "title": "Abonnieren Sie Updates",
+      "description": "Erhalten Sie neue Artikel über Webentwicklung direkt in Ihr Postfach",
+      "placeholder": "ihre@email.com",
+      "button": "Abonnieren",
+      "success": "Danke für Ihr Abonnement!",
+      "error": {
+        "invalid": "Ungültiges E-Mail-Format",
+        "exists": "Sie sind bereits abonniert",
+        "network": "Verbindungsfehler. Bitte später erneut versuchen",
+        "generic": "Etwas ist schiefgelaufen. Bitte erneut versuchen"
+      }
+    },
+    "categoryLabels": {
+      "webdev": "Webentwicklung",
+      "webdevDesc": "Webentwicklung und Website-Erstellung",
+      "seo": "SEO & Marketing",
+      "seoDesc": "Suchmaschinenoptimierung",
+      "performance": "Leistung",
+      "performanceDesc": "Geschwindigkeitsoptimierung"
+    },
+    "tagLabels": {
+      "seo": "SEO",
+      "performance": "Leistung"
+    }
+  }
+  
+}
