@@ -126,4 +126,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- ✅ AUTO-ADDED: tailwind-css-2026-architecture -->
+  <url>
+    <loc>https://my.delimes.ru/de/blog/tailwind-css-2026-stilarchitektur</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://my.delimes.ru/en/blog/tailwind-css-2026-style-architecture</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://my.delimes.ru/ru/blog/tailwind-css-2026-arhitektura-stiley</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
