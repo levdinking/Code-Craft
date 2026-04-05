@@ -60,6 +60,12 @@ console.log('📤 Step 3: Uploading to FTP...');
   try {
     await uploadToFTP(projectRoot, REMOTE_ROOT);
     console.log('\n✅ FTP upload completed!');
+
+    // 4. Загружаем серверные файлы (Node.js) в каталог приложения
+    const serverRemoteRoot = env.FTP_SERVER_ROOT || '/my.delimes.ru/project/app/';
+    console.log('\n📤 Step 4: Uploading server files...');
+    await uploadServerFiles(projectRoot, serverRemoteRoot);
+    console.log('✅ Server files uploaded!');
     
     console.log('\n' + '='.repeat(50));
     console.log('🎉 Deployment successful! Site is updated.');
@@ -96,10 +102,13 @@ async function uploadToFTP(projectRoot, remoteRoot) {
   }
 }
 
-async function uploadDirRecursive(client, localDir, remoteRoot, baseDir) {
+async function uploadDirRecursive(client, localDir, remoteRoot, baseDir, exclude) {
   const items = fs.readdirSync(localDir);
   
   for (const item of items) {
+    // Пропускаем исключённые папки
+    if (exclude && exclude.includes(item)) continue;
+
     const localPath = path.join(localDir, item);
     const relativePath = path.relative(baseDir, localPath);
     const remotePath = path.posix.join(remoteRoot, relativePath.replace(/\\/g, '/'));
@@ -108,7 +117,7 @@ async function uploadDirRecursive(client, localDir, remoteRoot, baseDir) {
     
     if (stat.isDirectory()) {
       await client.ensureDir(remotePath);
-      await uploadDirRecursive(client, localPath, remoteRoot, baseDir);
+      await uploadDirRecursive(client, localPath, remoteRoot, baseDir, exclude);
     } else {
       try {
         await client.uploadFrom(localPath, remotePath);
@@ -234,4 +243,44 @@ function escapeHtml(text) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+// ================= UPLOAD SERVER FILES =================
+async function uploadServerFiles(projectRoot, serverRemoteRoot) {
+  const client = new ftp.Client();
+  client.ftp.verbose = false;
+
+  const scriptsDir = path.join(projectRoot, 'scripts');
+
+  try {
+    await client.access(FTP_CONFIG);
+    console.log(`🔌 Connected for server upload`);
+
+    // Загружаем scripts/ (кроме node_modules)
+    await uploadDirRecursive(client, scriptsDir, serverRemoteRoot + 'scripts/', scriptsDir, ['node_modules']);
+
+    // Загружаем .env если есть
+    const envPath = path.join(projectRoot, '.env');
+    if (fs.existsSync(envPath)) {
+      await client.uploadFrom(envPath, serverRemoteRoot + '.env');
+      console.log('  ↑ .env');
+    }
+
+    // Создаём package.json для серверного приложения с точкой входа
+    const serverPkg = {
+      name: 'delimes-admin-server',
+      version: '1.0.0',
+      private: true,
+      scripts: { start: 'node scripts/server.js' },
+      engines: { node: '>=18' },
+    };
+    const tmpPkg = path.join(projectRoot, '.tmp-server-package.json');
+    fs.writeFileSync(tmpPkg, JSON.stringify(serverPkg, null, 2));
+    await client.uploadFrom(tmpPkg, serverRemoteRoot + 'package.json');
+    fs.unlinkSync(tmpPkg);
+    console.log('  ↑ package.json (server entry)');
+
+  } finally {
+    client.close();
+  }
 }

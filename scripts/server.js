@@ -1,12 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const { reloadEnv, getEnv } = require('./lib/env');
 
 // Load env on startup
 reloadEnv();
 
 const app = express();
+const isProd = getEnv('NODE_ENV', 'development') === 'production';
 
 // Middleware
 app.use(cors({
@@ -14,7 +16,7 @@ app.use(cors({
     // Allow requests with no origin (like mobile apps, curl)
     if (!origin) return callback(null, true);
     // Allow localhost in dev and the production domain
-    const allowed = ['http://localhost:5173', 'http://localhost:5174', 'https://my.delimes.ru'];
+    const allowed = ['http://localhost:5173', 'http://localhost:5174', 'https://my.delimes.ru', 'http://my.delimes.ru'];
     if (allowed.includes(origin)) return callback(null, true);
     callback(new Error('Not allowed by CORS'));
   },
@@ -53,6 +55,20 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// Продакшн: раздача статических файлов и SPA fallback
+if (isProd) {
+  // Путь к статике: htdocs/www на хостинге или dist/ локально
+  const staticDir = getEnv('STATIC_DIR', path.join(__dirname, '..', 'dist'));
+  if (fs.existsSync(staticDir)) {
+    app.use(express.static(staticDir));
+    // SPA fallback — все не-API запросы отдают index.html
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(staticDir, 'index.html'));
+    });
+    console.log(`Serving static files from: ${staticDir}`);
+  }
+}
+
 // Error handler
 app.use((err, req, res, next) => {
   console.error('Server error:', err.message);
@@ -62,5 +78,6 @@ app.use((err, req, res, next) => {
 const PORT = parseInt(getEnv('ADMIN_PORT', '3001'), 10);
 app.listen(PORT, () => {
   console.log(`Admin API server running on http://localhost:${PORT}`);
+  console.log(`Mode: ${isProd ? 'production' : 'development'}`);
   console.log(`Health check: http://localhost:${PORT}/api/health`);
 });
