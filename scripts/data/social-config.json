@@ -1,0 +1,34 @@
+{
+  "networks": {
+    "telegram": {
+      "enabled": true,
+      "configured": true,
+      "name": "Telegram",
+      "via": "direct"
+    },
+    "vk": {
+      "enabled": true,
+      "configured": true,
+      "name": "ВКонтакте",
+      "via": "direct"
+    },
+    "facebook": {
+      "enabled": true,
+      "configured": true,
+      "name": "Facebook",
+      "via": "buffer"
+    },
+    "instagram": {
+      "enabled": true,
+      "configured": true,
+      "name": "Instagram",
+      "via": "buffer"
+    },
+    "youtube": {
+      "enabled": true,
+      "configured": true,
+      "name": "YouTube",
+      "via": "buffer"
+    }
+  }
+}

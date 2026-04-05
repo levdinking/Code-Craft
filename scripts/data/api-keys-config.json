@@ -1,0 +1,61 @@
+{
+  "keys": [
+    {
+      "id": "qwen",
+      "name": "Qwen AI (DashScope)",
+      "envVar": "QWEN_API_KEY",
+      "description": "Генерация текстов, изображений, видео, озвучки",
+      "docUrl": "https://modelstudio.console.alibabacloud.com/",
+      "docLabel": "Alibaba Model Studio — раздел API Keys",
+      "testable": true
+    },
+    {
+      "id": "tinify",
+      "name": "Tinify (TinyPNG)",
+      "envVar": "TINIFY_API_KEY",
+      "description": "Сжатие изображений перед публикацией (500 бесплатных/мес)",
+      "docUrl": "https://tinify.com/dashboard/api",
+      "docLabel": "Tinify Dashboard — скопировать API Key",
+      "testable": true
+    },
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "envVar": "BUFFER_API_KEY",
+      "description": "Публикация в Facebook, Instagram, YouTube",
+      "docUrl": "https://buffer.com/developers/api",
+      "docLabel": "Buffer Developers — получить Access Token",
+      "testable": true
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram Bot",
+      "envVar": "TELEGRAM_TOKEN",
+      "description": "Публикация в Telegram-канал",
+      "docUrl": "https://t.me/BotFather",
+      "docLabel": "Создать бота через @BotFather, скопировать токен",
+      "testable": true,
+      "extraEnvVars": ["TELEGRAM_CHAT_ID"]
+    },
+    {
+      "id": "vk",
+      "name": "VK API",
+      "envVar": "VK_TOKEN",
+      "description": "Публикация в группу ВКонтакте",
+      "docUrl": "https://dev.vk.com/",
+      "docLabel": "VK для разработчиков — создать приложение, получить токен",
+      "testable": true,
+      "extraEnvVars": ["VK_GROUP_ID"]
+    },
+    {
+      "id": "ftp",
+      "name": "FTP (Hostland)",
+      "envVar": "FTP_HOST",
+      "description": "Хостинг для медиафайлов и деплоя сайта",
+      "docUrl": "https://www.hostland.ru/",
+      "docLabel": "Панель Hostland — настройки FTP доступа",
+      "testable": true,
+      "extraEnvVars": ["FTP_USER", "FTP_PASSWORD", "FTP_PORT"]
+    }
+  ]
+}

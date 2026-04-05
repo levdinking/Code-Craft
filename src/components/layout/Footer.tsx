@@ -175,7 +175,8 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Code & Craft {t('footer.rights', 'All rights reserved')}.
+            © {currentYear} Code & Craft {t('footer.rights', 'All rights reserved')}
+            <Link to={`/${lang}/admin`} className="text-muted-foreground hover:text-muted-foreground" aria-hidden="true">.</Link>
           </p>
           <p className="text-sm text-muted-foreground">
             {madeWithText}

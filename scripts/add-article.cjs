@@ -34,16 +34,30 @@ const { id, category, tags, date, image, related, translations } = articleData;
 const scriptDir = __dirname;
 const projectRoot = path.join(scriptDir, '..');
 
-// FTP конфиг
+// Загрузка .env
+function loadEnv(filePath) {
+  const env = {};
+  if (!fs.existsSync(filePath)) return env;
+  fs.readFileSync(filePath, 'utf8').split('\n').forEach(line => {
+    if (!line || line.startsWith('#')) return;
+    const [key, ...vals] = line.split('=');
+    if (key) env[key.trim()] = vals.join('=').trim();
+  });
+  return env;
+}
+
+const env = loadEnv(path.join(projectRoot, '.env'));
+
+// FTP конфиг из .env
 const FTP_CONFIG = {
-  host: 'ftp81.hostland.ru',
-  user: 'host1731061',
-  password: 'Levdin',
+  host: env.FTP_HOST || 'ftp81.hostland.ru',
+  user: env.FTP_USER || 'host1731061',
+  password: env.FTP_PASSWORD || '',
   secure: false,
-  port: 21
+  port: parseInt(env.FTP_PORT || '21', 10)
 };
 
-const REMOTE_ROOT = '/my.delimes.ru/htdocs/www/';
+const REMOTE_ROOT = env.FTP_REMOTE_ROOT || '/my.delimes.ru/htdocs/www/';
 
 // 1. Создаём папку статьи
 const articleDir = path.join(projectRoot, 'src', 'content', 'blog', id);

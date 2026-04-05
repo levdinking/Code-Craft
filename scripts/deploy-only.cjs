@@ -5,19 +5,33 @@ const path = require('path');
 const { execSync } = require('child_process');
 const ftp = require('basic-ftp');
 
-// FTP конфиг (тот же, что и в add-article.cjs)
-const FTP_CONFIG = {
-  host: 'serv81.hostland.ru',
-  user: 'host1731061',
-  password: 'Levdin051383',
-  secure: false,
-  port: 21
-};
-
-const REMOTE_ROOT = '/my.delimes.ru/htdocs/www/';
-
 const scriptDir = __dirname;
 const projectRoot = path.join(scriptDir, '..');
+
+// Загрузка .env
+function loadEnv(filePath) {
+  const env = {};
+  if (!fs.existsSync(filePath)) return env;
+  fs.readFileSync(filePath, 'utf8').split('\n').forEach(line => {
+    if (!line || line.startsWith('#')) return;
+    const [key, ...vals] = line.split('=');
+    if (key) env[key.trim()] = vals.join('=').trim();
+  });
+  return env;
+}
+
+const env = loadEnv(path.join(projectRoot, '.env'));
+
+// FTP конфиг из .env
+const FTP_CONFIG = {
+  host: env.FTP_HOST || 'ftp81.hostland.ru',
+  user: env.FTP_USER || 'host1731061',
+  password: env.FTP_PASSWORD || '',
+  secure: false,
+  port: parseInt(env.FTP_PORT || '21', 10)
+};
+
+const REMOTE_ROOT = env.FTP_REMOTE_ROOT || '/my.delimes.ru/htdocs/www/';
 
 console.log('🚀 Starting deployment process...\n');
 
