@@ -257,28 +257,37 @@ async function uploadServerFiles(projectRoot, serverRemoteRoot) {
     console.log(`🔌 Connected for server upload`);
 
     // Загружаем scripts/ (кроме node_modules)
+    await client.ensureDir(serverRemoteRoot + 'scripts/');
     await uploadDirRecursive(client, scriptsDir, serverRemoteRoot + 'scripts/', scriptsDir, ['node_modules']);
 
-    // Загружаем .env если есть
+    // Загружаем .env с NODE_ENV=production
     const envPath = path.join(projectRoot, '.env');
     if (fs.existsSync(envPath)) {
-      await client.uploadFrom(envPath, serverRemoteRoot + '.env');
-      console.log('  ↑ .env');
+      let envContent = fs.readFileSync(envPath, 'utf8');
+      envContent = envContent.replace(/NODE_ENV=development/, 'NODE_ENV=production');
+      const tmpEnv = path.join(projectRoot, '.tmp-server-env');
+      fs.writeFileSync(tmpEnv, envContent);
+      await client.uploadFrom(tmpEnv, serverRemoteRoot + '.env');
+      fs.unlinkSync(tmpEnv);
+      console.log('  ↑ .env (NODE_ENV=production)');
     }
 
-    // Создаём package.json для серверного приложения с точкой входа
+    // Создаём package.json для серверного приложения с точкой входа и всеми зависимостями
+    const scriptsPkg = JSON.parse(fs.readFileSync(path.join(scriptsDir, 'package.json'), 'utf8'));
     const serverPkg = {
       name: 'delimes-admin-server',
       version: '1.0.0',
       private: true,
+      type: 'commonjs',
       scripts: { start: 'node scripts/server.js' },
       engines: { node: '>=18' },
+      dependencies: scriptsPkg.dependencies || {},
     };
     const tmpPkg = path.join(projectRoot, '.tmp-server-package.json');
     fs.writeFileSync(tmpPkg, JSON.stringify(serverPkg, null, 2));
     await client.uploadFrom(tmpPkg, serverRemoteRoot + 'package.json');
     fs.unlinkSync(tmpPkg);
-    console.log('  ↑ package.json (server entry)');
+    console.log('  ↑ package.json (server entry + dependencies)');
 
   } finally {
     client.close();
